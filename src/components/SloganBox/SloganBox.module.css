@@ -1,0 +1,52 @@
+.slogan-box {
+  width: 100%;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.splodge1 {
+  width: 30.125rem;
+  height: 30.125rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: radial-gradient(50% 50% at 50% 50%, #F8EAE8 0%, rgba(248, 234, 232, 0) 100%);
+  z-index: -1;
+}
+
+.splodge2 {
+  width: 30.125rem;;
+  height: 30.125rem;;
+  position: absolute;
+  top: 19rem;
+  left: 14rem;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(229, 233, 244, 0.5) 0%, rgba(229, 233, 244, 0) 100%);
+  z-index: -1;
+}
+
+#mediumStar {
+  position: absolute;
+  top: 2.3rem;
+  right: 4.3rem;
+
+}
+
+#largeStar {
+  position: absolute;
+  top: -1.2rem;
+  right: 1rem;
+}
+
+.slogan {
+  margin: 3rem 0 3rem 0;
+  font-size: 4.625rem;
+  font-family: "Cormorant Garamond";
+}
+
+.experience {
+  font-weight: 700;
+}
+
+.info {
+  font-family: Plus Jakarta Sans;
+}
