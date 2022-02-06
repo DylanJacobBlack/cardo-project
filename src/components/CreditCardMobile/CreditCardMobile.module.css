@@ -1,0 +1,150 @@
+.card-box {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 4rem 0 4rem 0;
+  background-image: url("../images/CardBG1.png");
+  border-radius: 2rem 0 2rem 0;
+  width: 310px;
+  height: 185px;
+}
+
+.card {
+  position: absolute;
+  background-image: url("../images/CardBG2.png");
+  transform: matrix(0.98, 0.13, -0.15, 0.98, 0, 0);
+  border-radius: 2rem 0 2rem 0;
+  width: 310px;
+  height: 185px;
+  margin-bottom: 10rem;
+  z-index: -1;
+}
+
+#first-star {
+  padding-right: 1.5rem;
+  position: absolute;
+  top: 2rem;
+  left: 2.3rem;
+}
+
+#second-star {
+  position: absolute;
+  top: 2rem;
+  left: 2.7rem;
+}
+
+#cardo-logo {
+  position: absolute;
+  top: 2rem;
+  left: 3.9rem;
+}
+
+#ear {
+  position: absolute;
+  top: 2rem;
+  right: 5rem;
+}
+
+#orbs {
+  position: absolute;
+  top: 1.8rem;
+  right: 2.3rem;
+}
+
+.emv-box {
+position: absolute;
+background-image: url("../images/emvChip.png") ;
+border-radius: .4rem;
+left: 2.3rem;
+width: 49px;
+height: 35px;
+top: 5rem;
+overflow: hidden;
+}
+
+.overlay1 {
+  display:flex;
+  flex-direction: column;
+  width: .8rem;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+
+#box1 {
+  border-right: .15rem solid #cccde2;
+  height: .35rem;
+  width: 100%
+}
+#box2 {
+  border-top: .15rem solid #cccde2;
+  border-right: .15rem solid #cccde2;
+  height: .46rem;
+  width: 100%;
+}
+#box3 {
+  border-right: .15rem solid #cccde2;
+  border-top: .15rem solid #cccde2;
+  border-bottom: .15rem solid #cccde2;
+  border-radius: 0 0 .15rem 0;
+  height: .46rem;
+  width: 100%;
+}
+
+.overlay2 {
+  display:flex;
+  flex-direction: column;
+  width: .8rem;
+  position:absolute;
+  bottom: 0rem;
+  right: .152rem;
+}
+
+#box4 {
+  border-left: .15rem solid #cccde2;
+  border-top: .15rem solid #cccde2;
+  border-radius: .15rem 0 0 0;
+  height: .46rem;
+  width: 100%
+}
+#box5 {
+  border-top: .15rem solid #cccde2;
+  border-left: .15rem solid #cccde2;
+  height: .46rem;
+  width: 100%;
+}
+#box6 {
+  border-left: .15rem solid #cccde2;
+  border-top: .15rem solid #cccde2;
+  border-radius: 0 0 .15rem 0;
+  height: .35rem;
+  width: 100%;
+}
+
+.money {
+  font-family: Plus Jakarta Sans;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: #1D1D1C;
+  position: absolute;
+  left: 2rem;
+  bottom: 2.1rem;
+}
+
+.number {
+  position: absolute;
+  left: 2rem;
+  bottom: 1rem;
+  font-family: Plus Jakarta Sans;
+  font-weight: 400;
+  font-size: 8px;
+  letter-spacing: 5px;
+  color: #474C5F;
+
+}
+
+.stars {
+  position: absolute;
+  right: 2.3rem;
+  bottom: 1.3rem;
+}

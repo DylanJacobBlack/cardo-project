@@ -1,18 +1,20 @@
 import styles from "./Header.module.css";
 import threeStars from "../icons/threeStars.svg";
-import largeStar from "../icons/largeStar.svg";
-import mediumStar from "../icons/mediumStar.svg";
 import longArrow from "../icons/longArrow.svg";
 import shortArrow from "../icons/shortArrow.svg";
+
+import Icon from "../icons/CustomizableIcon";
+import CreditCardMobile from "../CreditCardMobile/CreditCardMobile"
 import ButtonPrimary from "../UI/ButtonPrimary";
 import ButtonSecondary from "../UI/ButtonSecondary";
+import StatsBox from "../UI/StatsBox";
 
 const SloganBox = () => {
   return (
     <div className={styles.header}>
       <img src={threeStars} alt="three stars" />
-      <img src={largeStar} alt="large star" id={styles.largeStar} />
-      <img src={mediumStar} alt="medium star" id={styles.mediumStar} />
+      <div id={styles.largeStar}><Icon icon="star" width="56" height="56" /></div>
+      <div id={styles.mediumStar}><Icon icon="star" width="23" height="23" /></div>
       <div className={styles.slogan}>
         <div>All the</div>
         <div className={styles.experience}>experience</div>
@@ -32,10 +34,15 @@ const SloganBox = () => {
       </p>
       <ButtonPrimary>Order a card</ButtonPrimary>
       <ButtonSecondary>
-        How it works
-        &nbsp;
+        How it works &nbsp;
         <img src={shortArrow} alt="short arrow" />
       </ButtonSecondary>
+      <div className={styles.stats}>
+        <StatsBox title="Active users" number="5000+" spacer="true"/>
+        <StatsBox title="Download" number="30.3k" spacer="true"/>
+        <StatsBox title="Reviews" number="1200+" spacer="false"/>
+      </div>
+      <CreditCardMobile />
     </div>
   );
 };

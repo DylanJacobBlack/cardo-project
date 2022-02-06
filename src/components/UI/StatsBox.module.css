@@ -1,0 +1,33 @@
+.no-spacer {
+  width: 12rem;
+  height: 4rem;
+  padding: .1rem;
+}
+
+.spacer {
+  position: relative;
+  width: 12rem;
+  padding: .1rem;
+}
+
+.spacer:after {
+  content: "";
+  background-color: rgba(29, 29, 28, .2);
+  border-radius: 1rem;
+  position: absolute;
+  width: 2px;
+  height: 3.5rem;
+  top: .625rem;
+  left: 80%;
+  display: block;
+}
+
+.title {
+  font-size: .75rem;
+  line-height: 1.4rem;
+}
+
+.number {
+  font-size: 1.125rem;
+  line-height: 0;
+}
