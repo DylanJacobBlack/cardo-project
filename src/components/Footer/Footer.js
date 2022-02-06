@@ -12,7 +12,7 @@ const Footer = () => {
         <FooterCard />
         <FooterCard />
         <FooterCard />
-        <FooterCard />
+        Substantial change  
       </div>
     </div>
   );
