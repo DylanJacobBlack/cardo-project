@@ -1,3 +1,19 @@
 .card {
-  background-color: black;
+  background-color: #181818;
+  padding: 1.7rem;
+}
+
+.title {
+  font-family: "Cormorant Garamond";
+  font-size: 36px;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+}
+
+.text {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: white;
+  opacity: 60%;
 }

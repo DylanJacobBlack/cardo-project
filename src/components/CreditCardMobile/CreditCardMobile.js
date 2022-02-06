@@ -32,8 +32,8 @@ const CreditCardMobile = () => {
           <div id={styles.box6} />
         </div>
       </div>
-      <text className={styles.money}>$12,445.00</text>
-      <text className={styles.number}>**5678</text>
+      <p className={styles.money}>$12,445.00</p>
+      <p className={styles.number}>**5678</p>
       <img className={styles.stars} src={threeStars} alt="three vertical stars" />
     </div>
   );
