@@ -1,7 +1,8 @@
 .header {
-  width: 100%;
+  width: calc(100vw - 2.8rem);
   position: relative;
   margin-top: 3rem;
+  padding: 1.4rem;
 }
 
 .splodge1 {

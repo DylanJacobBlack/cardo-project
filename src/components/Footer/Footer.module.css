@@ -1,0 +1,23 @@
+.footer {
+  width: calc(100vw - 2.8rem);
+  background-color: #1d1d1c;
+  height: 100%;
+  padding: 1.4rem;
+}
+
+.slogan {
+  color: white;
+  font-family: "Cormorant Garamond";
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 25rem));
+  grid-auto-rows: 15rem;
+  gap: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+  justify-content: center;
+}

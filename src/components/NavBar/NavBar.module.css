@@ -1,27 +1,33 @@
 .navbar {
   display: flex;
   position: relative;
-  width: 100%;
+  width: calc(vw 8 2.8rem);
   height: 2rem;
+  padding: 1.4rem;
 }
 
 #first-star {
-  padding-right: 1rem;
   position: absolute;
+  top: 2rem;
+  left: 1.5rem;
 }
 
 #second-star {
   position: absolute;
-  left: .5rem;
+  top: 2rem;
+  left: 2rem;
 }
 
 #cardo-logo {
   position: absolute;
-  left: 2.5rem;
+  top: 1.8rem;
+  left: 3.9rem;
 }
 
 #dropdown {
-  height:min-content;
+  position: absolute;
+  top: 2rem;
+  right: 1.4rem;
 }
 
 .grower {
