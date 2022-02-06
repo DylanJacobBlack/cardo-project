@@ -1,5 +1,5 @@
 import NavBar from "./components/NavBar/NavBar";
-import SloganBox from "./components/SloganBox/SloganBox"
+import SloganBox from "./components/Header/Header"
 import classes from "./App.module.css"
 
 

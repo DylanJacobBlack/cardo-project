@@ -1,0 +1,11 @@
+.btn {
+  background-color: #11253E;
+  color: white;
+  border-radius: 6.25rem;
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: .94rem;
+  padding: .5rem 1.5rem .5rem 1.5rem;
+  border: none;
+  cursor: pointer;
+}

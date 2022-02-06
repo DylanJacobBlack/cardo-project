@@ -1,4 +1,4 @@
-.slogan-box {
+.header {
   width: 100%;
   position: relative;
   margin-top: 3rem;
@@ -48,5 +48,13 @@
 }
 
 .info {
+  margin: 2rem 0 2rem 0;
+  padding: .1rem;
   font-family: Plus Jakarta Sans;
+  max-width: 19.7rem;
 }
+
+.order {
+  display: flex;
+}
+
