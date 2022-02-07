@@ -17,10 +17,10 @@ const MainContent = () => {
       <div className={styles["main-content"]}>
         <img src={threeStars} alt="three stars" />
         <div id={styles.largeStar}>
-          <Icon icon="star" width="56" height="56" />
+          <Icon name="star" width="56" height="56" color="#1D1D1C" />
         </div>
         <div id={styles.mediumStar}>
-          <Icon icon="star" width="23" height="23" />
+          <Icon name="star" width="23" height="23" color="#1D1D1C" />
         </div>
         <div className={styles.slogan}>
           <div className="reverse-breakpoint">

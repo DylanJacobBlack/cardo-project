@@ -1,14 +1,20 @@
 import Icon from "../icons/CustomizableIcon";
 
 import dropDownMenu from "../icons/dropDownMenu.svg";
-import styles from "./NavBar.module.css"
+import styles from "./NavBar.module.css";
 
 const NavBar = () => {
   return (
     <div className={styles.navbar}>
-      <div id={styles["first-star"]} ><Icon icon="star" width="21.27" height="21.27" /></div>
-      <div id={styles["second-star"]} ><Icon icon="star" width="21.27" height="21.27" /></div>
-      <div id={styles["cardo-logo"]}><Icon icon="cardo" width="75" height="24" /></div>
+      <div id={styles["first-star"]}>
+        <Icon name="star" width="21.27" height="21.27" color="#1D1D1C" />
+      </div>
+      <div id={styles["second-star"]}>
+        <Icon name="star" width="21.27" height="21.27" color="#1D1D1C" />
+      </div>
+      <div id={styles["cardo-logo"]}>
+        <Icon name="cardo" width="75" height="24" color="#1D1D1C" />
+      </div>
       <div className={styles.grower}></div>
       <div className={styles["nav-link"]}>Deposit</div>
       <div className={styles["nav-link"]}>Dashboard</div>

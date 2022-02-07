@@ -1,24 +1,23 @@
 import Icon from "../icons/CustomizableIcon";
 
-import styles from "./CreditCardMobile.module.css";
-import ear from "../icons/ear.svg";
+import styles from "./CreditCardDesktop.module.css";
+import ear from "../icons/ear2.svg"
 
-const CreditCardMobile = () => {
+const CreditCardDesktop = () => {
   return (
     <div className={styles["card-box"]}>
-      <div className={styles.card}></div>
       <div id={styles["first-star"]}>
-        <Icon name="star" width="12.39" height="12.39" color="#1D1D1C" />
+        <Icon name="star" width="16.1" height="16.1" color="#ccd7eb" />
       </div>
       <div id={styles["second-star"]}>
-        <Icon name="star" width="12.39" height="12.39" color="#1D1D1C" />
+        <Icon name="star" width="16.1" height="16.1" color="#ccd7eb" />
       </div>
       <div id={styles["cardo-logo"]}>
-        <Icon name="cardo" width="43.3" height="13.87" color="#1D1D1C" />
+        <Icon name="cardo" width="56.25" height="18.02" color="#1D1D1C" />
       </div>
       <img id={styles.ear} src={ear} alt="ear?" />
       <div id={styles.orbs}>
-        <Icon name="orbs" width="28.21" height="17.43" color="#1D1D1C" />
+        <Icon name="orbs" width="36.64" height="22.64" color="#1D1D1C" />
       </div>
       <div className={styles["emv-box"]}>
         <div className={styles.overlay1}>
@@ -32,13 +31,14 @@ const CreditCardMobile = () => {
           <div id={styles.box6} />
         </div>
       </div>
-      <p className={styles.money}>$12,445.00</p>
-      <p className={styles.number}>**5678</p>
+      <p className={styles.name}>MAURICIO LÓPEZ</p>
+
+      <p className={styles.number}>5678</p>
       <div className={styles.stars}>
-        <Icon name="stars" width="10.92" height="39.88" color="#FFFFFF" />
+        <Icon name="stars" width="14.19" height="51.8" color="#ccd7eb" />
       </div>
     </div>
   );
 };
 
-export default CreditCardMobile;
+export default CreditCardDesktop;

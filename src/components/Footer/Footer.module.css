@@ -1,9 +1,7 @@
 .footer {
-  width: calc(100vw - 2.8rem);
   background-color: #1d1d1c;
   height: 100%;
-  padding: 1.4rem;
-  z-index: 2;
+  padding: 1.4rem 1.4rem 1.4rem 2rem;
 }
 
 .slogan {
@@ -46,5 +44,11 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 600px) {
+  .footer {
+    padding: 1.4rem 7.2rem 4rem 7.2rem;
   }
 }
