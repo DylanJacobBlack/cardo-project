@@ -1,15 +1,12 @@
 import ButtonTertiary from "../UI/ButtonTertiary";
 import styles from "./FooterCard.module.css";
 
-const FooterCard = () => {
+const FooterCard = (props) => {
   return (
     <div className={styles.card}>
-      <h3 className={styles.title}>Feature #1</h3>
-      <p className={styles.text}>
-        Aenean consequat ligula vitae orci suscipit luctus. Sed sagittis ligula
-        sit amet quam vulputate congue.
-      </p>
-      <ButtonTertiary>Learn more</ButtonTertiary>
+      <h3 className={styles.title}>{props.title}</h3>
+      <p className={styles.text}>{props.description}</p>
+      <ButtonTertiary link={props.button.link}>{props.button.text}</ButtonTertiary>
     </div>
   );
 };

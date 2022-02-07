@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { GridWrap, GridRow, GridColumn } from "emotion-flex-grid";
 
 import FooterCard from "./FooterCard";
 
@@ -22,10 +23,10 @@ const Footer = () => {
           throw new Error("Something went wrong.");
         }
         const data = await response.json();
-        console.log(data)
-        // setCards();
+        setCards(data.slice(0, 6));
       } catch (error) {
         setError(error.message);
+        console.log(error)
       }
       setIsLoading(false);
     })();
@@ -34,35 +35,29 @@ const Footer = () => {
   let status = "";
 
   if (error) {
-    status = error;
+    status = "Our apologies, but we are unable to retrieve data at this time.";
   }
 
   return (
     <div className={styles.footer}>
       <p className={styles.slogan}>Experience The Cardo</p>
       {isLoading && (
-        <div className="spinner-container">
-          {/* <img className="spinner" src={loadingSpinner} alt="Loading spinner" /> */}
-        </div>
+        <div class={styles["lds-dual-ring"]}></div>
       )}
       {status !== "" && (
         <div className={styles["status-container"]}>
-          <div className={styles.message}>
-            <h1>{status}</h1>
-          </div>
+          <div className={styles.message}>{status}</div>
         </div>
       )}
-      {!isLoading &&
-        cards.length > 0 &&
-        cards.map((card) => (
-          <div className={styles.grid}>
-            <FooterCard />
-            <FooterCard />
-            <FooterCard />
-            <FooterCard />
-            <FooterCard />
-          </div>
-        ))}
+      <GridRow wrap="wrap" align="center" justify="center">
+        {!isLoading &&
+          cards.length > 0 &&
+          cards.map((card) => (
+            <GridColumn width={[12, 10, 5, 3.5]} m="m">
+              <FooterCard title={card.title} description={card.description} button={card.button} />
+            </GridColumn>
+          ))}
+      </GridRow>
     </div>
   );
 };
