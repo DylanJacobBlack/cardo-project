@@ -1,0 +1,101 @@
+.grower {
+  flex: auto;
+}
+
+.main-content {
+  width: calc(100vw - 2.8rem);
+  position: relative;
+  margin-top: 3rem;
+  padding: 1.4rem;
+}
+
+.splodge1 {
+  width: 30.125rem;
+  height: 30.125rem;
+  position: absolute;
+  left: -7rem;
+  top: 0;
+  background: radial-gradient(50% 50% at 50% 50%, #F8EAE8 0%, rgba(248, 234, 232, 0) 100%);
+  z-index: -1;
+}
+
+.splodge2 {
+  width: 30.125rem;;
+  height: 30.125rem;;
+  position: absolute;
+  top: 19rem;
+  left: 9rem;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(229, 233, 244, 0.5) 0%, rgba(229, 233, 244, 0) 100%);
+  z-index: -1;
+}
+
+#mediumStar {
+  position: absolute;
+  top: 2.3rem;
+  right: 5.5rem;
+
+}
+
+#largeStar {
+  position: absolute;
+  top: -1.2rem;
+  right: 2.2rem;
+}
+
+.slogan {
+  margin: 3rem 0 3rem 0;
+  font-size: 4rem;
+  font-family: "Cormorant Garamond";
+  min-width: 360px;
+}
+
+.long-arrow {
+  position: absolute;
+  top: 26rem;
+}
+
+.info {
+  margin: 5rem 0 2rem 0;
+  padding: .1rem;
+  font-family: Plus Jakarta Sans;
+  max-width: 19.7rem;
+}
+
+.order {
+  display: flex;
+}
+
+.stats {
+  margin-top: 2rem;
+  display: flex;
+}
+
+@media (min-width: 600px) {
+  .main-content {
+    width: 100%;
+  }
+
+  .long-arrow {
+    top: 17rem;
+  }
+
+  .info {
+    margin-bottom: 3.5rem;
+  }
+
+  #mediumStar {
+    top: 4.5rem;
+    right: -6.5rem;
+    z-index: 1;
+  }
+  
+  #largeStar {
+    top: 1rem;
+    right: -9.8rem;
+    z-index: 1;
+  }
+
+  .stats {
+    margin-top: 5rem;
+  }
+}

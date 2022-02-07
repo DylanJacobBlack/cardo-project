@@ -1,0 +1,23 @@
+.visuals {
+  align-self: flex-end;
+  background-image: url("../images/DesktopBG.png");
+  width: 44rem;
+  height: 56rem;
+  position: relative;
+}
+
+.hand {
+  position: absolute;
+  left: 11rem;
+  top: 7.5rem;
+  z-index: 1;
+}
+
+.lines {
+  position: absolute;
+  top: 18rem;
+  z-index: 3;
+  opacity: 70%;
+  
+}
+

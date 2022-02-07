@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { GridWrap, GridRow, GridColumn } from "emotion-flex-grid";
+import { GridRow, GridColumn } from "emotion-flex-grid";
 
 import FooterCard from "./FooterCard";
 
@@ -42,7 +42,7 @@ const Footer = () => {
     <div className={styles.footer}>
       <p className={styles.slogan}>Experience The Cardo</p>
       {isLoading && (
-        <div class={styles["lds-dual-ring"]}></div>
+        <div className={styles["lds-dual-ring"]}></div>
       )}
       {status !== "" && (
         <div className={styles["status-container"]}>

@@ -1,7 +1,6 @@
 .navbar {
   display: flex;
   position: relative;
-  width: calc(vw 8 2.8rem);
   height: 2rem;
   padding: 1.4rem;
 }
@@ -32,4 +31,26 @@
 
 .grower {
   flex: 1 0 0;
+}
+
+@media (min-width: 600px) {
+  .navbar {
+    margin: 1rem 0 3rem 0rem;
+  }
+
+  #first-star {
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+  }
+  
+  #second-star {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+
+  #dropdown {
+    display: none;
+  }
 }
