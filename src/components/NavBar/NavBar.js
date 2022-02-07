@@ -10,6 +10,10 @@ const NavBar = () => {
       <div id={styles["second-star"]} ><Icon icon="star" width="21.27" height="21.27" /></div>
       <div id={styles["cardo-logo"]}><Icon icon="cardo" width="75" height="24" /></div>
       <div className={styles.grower}></div>
+      <div className={styles["nav-link"]}>Deposit</div>
+      <div className={styles["nav-link"]}>Dashboard</div>
+      <div className={styles["nav-link"]}>Companny</div>
+      <div className={styles["nav-link"]}>Pricing</div>
       <img src={dropDownMenu} alt="Cardo logo" id={styles.dropdown} />
     </div>
   );

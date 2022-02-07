@@ -33,6 +33,10 @@
   flex: 1 0 0;
 }
 
+.nav-link {
+  display: none;
+}
+
 @media (min-width: 600px) {
   .navbar {
     margin: 1rem 0 3rem 0rem;
@@ -43,7 +47,7 @@
     top: 2rem;
     left: 1.5rem;
   }
-  
+
   #second-star {
     position: absolute;
     top: 2rem;
@@ -52,5 +56,14 @@
 
   #dropdown {
     display: none;
+  }
+
+  .nav-link {
+    display: inline;
+    font-family: Plus Jakarta Sans;
+    font-size: 13.5px;
+    text-align: center;
+    padding: .7rem 2.8rem 1rem 0;
+    cursor: pointer;
   }
 }
