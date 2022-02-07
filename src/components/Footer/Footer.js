@@ -49,7 +49,7 @@ const Footer = () => {
           <div className={styles.message}>{status}</div>
         </div>
       )}
-      <GridRow wrap="wrap" align="center" justify="center">
+      <GridRow wrap="wrap" align="center">
         {!isLoading &&
           cards.length > 0 &&
           cards.map((card) => (
