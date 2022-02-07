@@ -1,8 +1,11 @@
 import styles from "./ButtonTertiary.module.css";
 
 const ButtonTertiary = (props) => {
-  return <button className={styles.btn}>{props.children}</button>;
+  return (
+    <a href ={props.link}>
+      <button className={styles.btn}>{props.children}</button>
+    </a>
+  );
 };
 
 export default ButtonTertiary;
-
