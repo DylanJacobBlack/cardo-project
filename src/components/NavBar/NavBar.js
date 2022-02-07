@@ -18,7 +18,7 @@ const NavBar = () => {
       <div className={styles.grower}></div>
       <div className={styles["nav-link"]}>Deposit</div>
       <div className={styles["nav-link"]}>Dashboard</div>
-      <div className={styles["nav-link"]}>Companny</div>
+      <div className={styles["nav-link"]}>Company</div>
       <div className={styles["nav-link"]}>Pricing</div>
       <img src={dropDownMenu} alt="Cardo logo" id={styles.dropdown} />
     </div>
