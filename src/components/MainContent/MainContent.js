@@ -47,8 +47,8 @@ const MainContent = () => {
         <div className={styles.splodge2} />
         <p className={styles.info}>
           Simple transfers, payments for utilities, functional statemement, card
-          settings, for which you used to have to go to the branch
-          online-banking
+          settings, for which you used to have to go to the branch.
+          Online-banking you can trust.
         </p>
         <ButtonPrimary>Order a card</ButtonPrimary>
         <ButtonSecondary>
@@ -57,7 +57,7 @@ const MainContent = () => {
         </ButtonSecondary>
         <div className={styles.stats}>
           <StatsBox title="Active users" number="5000+" spacer="true" />
-          <StatsBox title="Download" number="30.3k" spacer="true" />
+          <StatsBox title="Downloads" number="30.3k" spacer="true" />
           <StatsBox title="Reviews" number="1200+" spacer="false" />
         </div>
         <div className="reverse-breakpoint">

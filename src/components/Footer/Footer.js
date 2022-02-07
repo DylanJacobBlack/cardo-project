@@ -53,7 +53,7 @@ const Footer = () => {
         {!isLoading &&
           cards.length > 0 &&
           cards.map((card) => (
-            <GridColumn width={[12, 10, 5, 3.5]} m="m">
+            <GridColumn width={[12, 12, 5, 5, 3.65]} m="m">
               <FooterCard title={card.title} description={card.description} button={card.button} />
             </GridColumn>
           ))}
