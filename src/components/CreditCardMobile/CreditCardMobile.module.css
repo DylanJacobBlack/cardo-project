@@ -58,7 +58,7 @@ border-radius: .4rem;
 left: 2.3rem;
 width: 49px;
 height: 35px;
-top: 5rem;
+top: 4.5rem;
 overflow: hidden;
 }
 
@@ -128,13 +128,13 @@ overflow: hidden;
   color: #1D1D1C;
   position: absolute;
   left: 2rem;
-  bottom: 2.1rem;
+  bottom: 1.4rem;
 }
 
 .number {
   position: absolute;
   left: 2rem;
-  bottom: 1rem;
+  bottom: .6rem;
   font-family: Plus Jakarta Sans;
   font-weight: 400;
   font-size: 8px;
