@@ -23,7 +23,6 @@ const Footer = () => {
           throw new Error("Something went wrong.");
         }
         const data = await response.json();
-        console.log(data);
         setCards(data.slice(0, 6));
       } catch (error) {
         setError(error.message);
