@@ -23,6 +23,7 @@ const Footer = () => {
           throw new Error("Something went wrong.");
         }
         const data = await response.json();
+        console.log(data);
         setCards(data.slice(0, 6));
       } catch (error) {
         setError(error.message);
@@ -53,7 +54,7 @@ const Footer = () => {
         {!isLoading &&
           cards.length > 0 &&
           cards.map((card) => (
-            <GridColumn width={[12, 12, 5, 5, 3.65]} m="m">
+            <GridColumn width={[12, 12, 5, 5, 3.65]} m="m" key={card.title}>
               <FooterCard title={card.title} description={card.description} button={card.button} />
             </GridColumn>
           ))}
