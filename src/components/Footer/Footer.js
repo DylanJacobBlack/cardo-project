@@ -11,6 +11,7 @@ const Footer = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    const ac = new AbortController();
     (async function () {
       try {
         setIsLoading(true);
@@ -26,17 +27,17 @@ const Footer = () => {
         setCards(data.slice(0, 6));
       } catch (error) {
         setError(error.message);
-        console.log(error)
+        console.log(error);
       }
       setIsLoading(false);
-      
-      // Cleanup function to prevent memory leak
-      return () => {
-        setCards({}); 
-        setError({});
-        setIsLoading({})
-      };
     })();
+
+    // Cleanup function to stop memory leak
+    return () => {
+      setCards({});
+      setError({});
+      setIsLoading({});
+    };
   }, []);
 
   let status = "";
@@ -48,9 +49,7 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <p className={styles.slogan}>Experience The Cardo</p>
-      {isLoading && (
-        <div className={styles["lds-dual-ring"]}></div>
-      )}
+      {isLoading && <div className={styles["lds-dual-ring"]}></div>}
       {status !== "" && (
         <div className={styles["status-container"]} alt="spinner">
           <div className={styles.message}>{status}</div>
@@ -61,7 +60,11 @@ const Footer = () => {
           cards.length > 0 &&
           cards.map((card) => (
             <GridColumn width={[12, 12, 5, 5, 3.65]} m="m" key={card.title}>
-              <FooterCard title={card.title} description={card.description} button={card.button} />
+              <FooterCard
+                title={card.title}
+                description={card.description}
+                button={card.button}
+              />
             </GridColumn>
           ))}
       </GridRow>

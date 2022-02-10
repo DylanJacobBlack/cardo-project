@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, act } from "@testing-library/react";
 import Footer from "./Footer";
 
 describe("Footer tests", () => {
@@ -14,9 +14,9 @@ describe("Footer tests", () => {
   //   expect(loadingSpinner).toBeInTheDocument();
   // })
   
-  test("renders cards if request returns data" , async () => {
+  test("renders buttons if request returns data" , async () => {
     render(<Footer />);
-    const cards = await screen.findAllByRole('button');
-    expect(cards).not.toHaveLength(0);
+    const buttons = await screen.findAllByRole('button');
+    expect(buttons).not.toHaveLength(0);
   })
 });
