@@ -7,4 +7,16 @@ describe("Footer tests", () => {
     const header = screen.getByText("Experience The Cardo");
     expect(header).toBeInTheDocument();
   })
+
+  // test("Loading spinner renders on load", () => {
+  //   render(<Footer />);
+  //   const loadingSpinner = screen.getAllByAltText("spinner");
+  //   expect(loadingSpinner).toBeInTheDocument();
+  // })
+  
+  test("renders cards if request returns data" , async () => {
+    render(<Footer />);
+    const cards = await screen.findAllByRole('button');
+    expect(cards).not.toHaveLength(0);
+  })
 });
