@@ -24,18 +24,18 @@ const MainContent = () => {
         </div>
         <div className={styles.slogan}>
           <div className="reverse-breakpoint">
-            <div>All the</div>
+            <div>Unlock</div>
             <div>
-              <strong>experience</strong>
+              the <strong>potential</strong>
             </div>
-            <div>in the new</div>
+            <div>of the new</div>
             <div>credit card</div>
           </div>
           <div className="breakpoint">
             <div>
-              All the <strong>experience</strong>
+              Unlock the <strong>potential</strong>
             </div>
-            <div>in the new credit card</div>
+            <div>of the new credit card</div>
           </div>
         </div>
         <img
@@ -46,8 +46,8 @@ const MainContent = () => {
         <div className={styles.splodge1} />
         <div className={styles.splodge2} />
         <p className={styles.info}>
-          Simple transfers, payments for utilities, functional statemement, card
-          settings, for which you used to have to go to the branch.
+          Tranfers, payments, and electronic statements,
+          all of which used to require physically going to a branch.
           Online-banking you can trust.
         </p>
         <ButtonPrimary>Order a card</ButtonPrimary>
