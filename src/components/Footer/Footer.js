@@ -11,7 +11,6 @@ const Footer = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    const ac = new AbortController();
     (async function () {
       try {
         setIsLoading(true);
@@ -48,7 +47,7 @@ const Footer = () => {
 
   return (
     <div className={styles.footer}>
-      <p className={styles.slogan}>Experience The Cardo</p>
+      <p className={styles.slogan}>Experience the Cardo</p>
       {isLoading && <div className={styles["lds-dual-ring"]}></div>}
       {status !== "" && (
         <div className={styles["status-container"]} alt="spinner">
